@@ -8,7 +8,12 @@ public class Calculator {
 
     private int sumImpl(int a, int b) {
         a = a * b;
+        a = doSomething(a);
         return a + b;
+    }
+    
+    private int doSomething(int a) {
+        return a + 1001;
     }
 
     public int minus(int a, int b) {
